@@ -6,7 +6,7 @@ def init_motoru():
     sleep(100)
 
 def jed(strana, smer, rychlost):
-    if rychlost >= 0 and rychlost <= 250:
+    if rychlost >= 0 and rychlost <= 255:
         if strana == "leva" and smer == "dopredu":
             x = b'\x05'
         elif strana == "leva" and smer == "dozadu":
